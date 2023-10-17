@@ -1,4 +1,4 @@
-package starter.navigation;
+package navigation;
 
 import net.serenitybdd.annotations.*;
 import net.thucydides.core.pages.PageObject;
