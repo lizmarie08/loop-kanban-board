@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.serenitybdd.starter</groupId>
-    <artifactId>cucumber-starter</artifactId>
+    <artifactId>lopp-kanban-board</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
@@ -11,7 +11,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <serenity.version>4.0.1</serenity.version>
+        <serenity.version>4.0.0-beta-2</serenity.version>
         <junit-vintage-engine.version>5.9.3</junit-vintage-engine.version>
         <junit-platform-suite.version>1.9.3</junit-platform-suite.version>
         <cucumber-junit-platform-engine.version>7.2.3</cucumber-junit-platform-engine.version>
@@ -104,7 +104,7 @@
             </plugin>
             <plugin>
                 <artifactId>maven-failsafe-plugin</artifactId>
-                <version>3.1.2</version>
+                <version>3.0.0-M5</version>
                 <configuration>
                     <includes>
                         <include>**/*Test.java</include>

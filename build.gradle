@@ -22,11 +22,11 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: "net.serenity-bdd.serenity-gradle-plugin"
 
-sourceCompatibility = 16
-targetCompatibility = 16
+sourceCompatibility = 11
+targetCompatibility = 11
 
 ext {
-    serenity_version = '4.0.1'
+    serenity_version = '4.0.0-beta-2'
     junit_platform_launcher_version="1.9.3"
     cucumber_junit_platform_engine_version="7.2.3"
     junit_platform_suite_version="1.9.3"
