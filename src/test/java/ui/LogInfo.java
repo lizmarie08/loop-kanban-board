@@ -1,4 +1,4 @@
-package enters;
+package ui;
 
 import net.serenitybdd.screenplay.targets.Target;
 
@@ -18,4 +18,10 @@ public class LogInfo {
 
     public static final Target HOMEPAGESECTION = Target.the("HomePage SECTION")
             .locatedBy("//body/div[@id='app']/div[@id='64e26a56aac2eb0e627f1ad4']/div[1]/div[1]/div[1]/section[1]");
+
+    public static final Target MENSAJE_DE_ERROR = Target.the("MENSAJE DE ERROR DE EMAIL")
+            .locatedBy("//*[contains(text(),\"Email isn't a valid email\")]");
+
+    public static final Target SHOW_PASSWORDO = Target.the("BOTON SHOW PASSWORD")
+            .locatedBy("//*[@id=\"showPassToggle\"]/div/label");
 }
