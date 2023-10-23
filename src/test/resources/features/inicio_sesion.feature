@@ -24,15 +24,18 @@ Característica: Funcionalidad de Inicio de Sesión y Gestión de Cuentas en una
   @escenario04
   Escenario: Olvidé mi Contraseña
     Dado Sergey está en la página de inicio de sesión
-    Cuando hace clic en el enlace "Olvidé mi Contraseña"
-    Y proporciona su dirección de correo electrónico "micorreo@example.com"
-    Y hace clic en el botón "Enviar"
-    Entonces debería recibir un correo electrónico de recuperación de contraseña
+    Cuando ingresa el nombre de usuario "cbarahona@calengs.com" y la contraseña "testenvpass"
+    Y hace clic en el enlace Olvidé mi Contraseña
+    #Entonces debería recibir un correo electrónico de recuperación de contraseña
 
   @escenario05
-  Escenario: Crear una Cuenta Nueva
+  Esquema del escenario: Crear una Cuenta Nueva
     Dado Sergey está en la página de registro
-    Cuando completa el formulario de registro con su nombre, correo electrónico y contraseña
+    Cuando completa el formulario de registro con su nombre "<nombre>", apellido "<apellido>", correo electrónico "<correoElectronico>" y contraseña "<contrasena>"
     Y hace clic en el botón "Registrarse"
-    Entonces debería estar en su panel de control
+    #Entonces debería estar en su panel de control
+    Ejemplos:
+      | nombre        | apellido      | correoElectronico   | contrasena |
+      | NombreEjemplo1 | ApellidoEjemplo1 | correo1@example.com | Pass1     |
+      | NombreEjemplo2 | ApellidoEjemplo2 | correo2@example.com | Pass2     |
 
