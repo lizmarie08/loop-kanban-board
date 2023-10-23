@@ -8,7 +8,7 @@ import net.serenitybdd.screenplay.waits.Wait;
 
 import java.util.concurrent.Callable;
 
-import static ui.LogInfo.MENSAJE_DE_ERROR;
+import static ui.LogInPage.MENSAJE_DE_ERROR;
 
 public class VerificarMensajeDeError implements Task {
     private final String mensajeError;

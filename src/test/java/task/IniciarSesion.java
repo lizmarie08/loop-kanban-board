@@ -4,11 +4,9 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.waits.WaitUntil;
-import ui.LogInfo;
+import ui.LogInPage;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class IniciarSesion implements Task {
 
@@ -23,9 +21,9 @@ public class IniciarSesion implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Enter.theValue(nombreUsuario).into(ui.LogInfo.EMAIL),
-                Enter.theValue(contrasena).into(LogInfo.PASSWORD),
-                Click.on(LogInfo.LOGINBTN)
+                Enter.theValue(nombreUsuario).into(LogInPage.EMAIL),
+                Enter.theValue(contrasena).into(LogInPage.PASSWORD),
+                Click.on(LogInPage.LOGINBTN)
         );
     }
 

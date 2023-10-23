@@ -2,7 +2,7 @@ package ui;
 
 import net.serenitybdd.screenplay.targets.Target;
 
-public class LogInfo {
+public class LogInPage {
 
     public static final Target EMAIL =  Target.the("Email Address field")
             .locatedBy("/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[2]/input[1]");
@@ -24,4 +24,11 @@ public class LogInfo {
 
     public static final Target SHOW_PASSWORDO = Target.the("BOTON SHOW PASSWORD")
             .locatedBy("//*[@id=\"showPassToggle\"]/div/label");
+
+    public static final Target SIGNUP_BTN = Target.the("BOTON DE CREAR CUENTA")
+            .locatedBy("//*[@id=\"SignupBtn\"]");
+
+    public static final Target FORGOT_PASSWORD_LINK = Target.the("ENLACE OLVIDE MI CONTRASENA")
+            .locatedBy("//*[@id=\"ForgotPass\"]");
+
 }
