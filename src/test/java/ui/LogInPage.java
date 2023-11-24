@@ -5,10 +5,10 @@ import net.serenitybdd.screenplay.targets.Target;
 public class LogInPage {
 
     public static final Target EMAIL =  Target.the("Email Address field")
-            .locatedBy("/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[2]/input[1]");
+            .locatedBy("/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[2]/input[1]");
 
     public static final Target PASSWORD =  Target.the("Password field")
-            .locatedBy("/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[2]/div[2]/input[1]");
+            .locatedBy("/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[2]/input[1]");
 
     public static final Target LOGINBTN = Target.the("Login Button")
             .locatedBy("//button[@id='loginMainBtn']");
